@@ -4,6 +4,9 @@
  * @file map.h
  */
 
+/**
+ * @brief Library version
+ */
 #define MINIMALIST_MAP_VERSION "1.0.0"
 
 /**
@@ -11,6 +14,9 @@
  */
 struct minimalist_map;
 
+/**
+ * @brief Compare function pointer for the minimalist_map
+ */
 typedef int (*minimalist_map_compare_fn)(const void*, const void*);
 
 /**
