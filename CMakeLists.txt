@@ -13,7 +13,7 @@ install(TARGETS minimalist_map LIBRARY DESTINATION lib)
 install(DIRECTORY include/minimalist DESTINATION include
   FILES_MATCHING PATTERN "*.h")
 if (UNIX)
-  configure_file(minimalist-map.pc.in minimalist-map.pc)
+  configure_file(minimalist-map.pc.in minimalist-map.pc @ONLY)
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/minimalist-map.pc
     DESTINATION lib/pkgconfig)
 endif()
